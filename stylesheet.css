@@ -1211,7 +1211,7 @@ section{
     .menu-toggle {
         display: block; /* Show hamburger icon on mobile */
         cursor: pointer;
-        position: absolute; /* Position it fixed */
+        position: fixed; /* Position it fixed */
         top: 20px;
         right: 20px;
         z-index: 1001; /* Ensure hamburger is on top */
