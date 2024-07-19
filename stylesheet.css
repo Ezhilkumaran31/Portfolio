@@ -24,6 +24,7 @@ body {
     z-index: 100;
 }
 
+
 .logo {
     position: relative;
     font-size: 25px;
@@ -1171,5 +1172,61 @@ section{
         width: 200px; /* Adjust based on desired size */
         height: 120px; /* Adjust based on desired size */
         margin-top: 40px; /* Push radial bar down */
+    }
+}
+/* Default styles for larger screens */
+.navbar {
+    display: flex; /* Horizontal layout */
+}
+
+.menu-toggle {
+    display: none; /* Hide hamburger icon on larger screens */
+}
+
+/* Hide the navbar on smaller screens and show the hamburger menu */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex; /* Show navbar on smaller screens */
+        flex-direction: column; /* Stack items vertically */
+        position: fixed; /* Fixed position for the sliding effect */
+        top: 0;
+        right: -250px; /* Start off-screen */
+        width: 250px; /* Width of the sliding navbar */
+        height: 100vh; /* Full viewport height */
+        background-color: #ffffff; /* Light white color */
+        transition: right 0.3s ease; /* Slide-in transition */
+        padding: 20px; /* Padding inside the navbar */
+        z-index: 1000; /* Ensure navbar is on top */
+    }
+
+    /* Style for each link in the navbar on mobile */
+    .navbar a {
+        color: #333333; /* Darker color for text */
+        text-decoration: none; /* Remove underline from links */
+        padding: 15px; /* Space between links */
+        font-size: 18px; /* Font size */
+        display: block; /* Make links block-level on mobile */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger icon on mobile */
+        cursor: pointer;
+        position: absolute; /* Position it fixed */
+        top: 20px;
+        right: 20px;
+        z-index: 1001; /* Ensure hamburger is on top */
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333333; /* Color of the hamburger lines */
+        margin: 5px 0;
+    }
+
+    /* When the navbar is active (i.e., when hamburger is clicked) */
+    .navbar.active {
+        right: 0; /* Slide in from the right */
     }
 }

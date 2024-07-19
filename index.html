@@ -11,6 +11,11 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
 
         <nav class="navbar">
             <a href="#" style="--i:1" class="active">Home</a>
@@ -21,7 +26,7 @@
 
         </nav>
     </header>
-    <section class="home">
+    <section class="home scroll-animate" data-src="home.html">
         <div class="home-content">
             <h3>Hello,It's me</h3>
             <h1>Ezhil Kumaran</h1>
@@ -40,7 +45,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about scroll-animate" id="about" data-src="about.html">
         <div class="about-img">
             <img src="images/black-back.jpg">
         </div>
@@ -57,7 +62,7 @@
     </section>
 
 
-    <section id="education">
+    <section id="education" class="scroll-animate" data-src="education.html">
         <div class="main-text">
             <h2>My <span>Education</span></h2>
         </div>
@@ -85,7 +90,7 @@
     
 
 
-    <section class="services" id="services">
+    <section class="services  scroll-animate" id="services" data-src="services.html">
         <div class="container">
             <h1 class="sub-title">Areas of <span>Interest</span></h1>
             <div class="services-list">
@@ -111,7 +116,7 @@
         </div>
     </section>
     <h1 class="sub-title">My <span>Skills</span></h1>
-    <section class="skill">
+    <section class="skill  scroll-animate" data-src="skill.html">
         <div class="container1" id="Skills">
             <h1 class="heading1">Technical Skills</h1>
             <div class="Technical-bars">
@@ -197,7 +202,7 @@
         </div>
         </div>
     </section>
-    <section>
+    <section id="portfolio" class="scroll-animate" data-src="portfolio.html">
         <div id="portfolio">
             <div class="main-text">
                 <h2>My <span>Project</span></h2>
@@ -238,7 +243,7 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact scroll-animate" id="contact" data-src="contact.html">
         <div class="contact-text">
             <h2>Contact <span>Me</span></h2><br>
             <h4>Let's work together</h4>
