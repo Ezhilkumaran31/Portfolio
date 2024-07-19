@@ -1193,7 +1193,7 @@ section{
         right: -250px; /* Start off-screen */
         width: 250px; /* Width of the sliding navbar */
         height: 100vh; /* Full viewport height */
-        background-color: #747588; /* Light gray color for the navbar */
+        background-color: #5a5b79; /* Light gray color for the navbar */
         transition: right 0.3s ease; /* Slide-in transition */
         padding: 20px; /* Padding inside the navbar */
         z-index: 1000; /* Ensure navbar is on top */
