@@ -1146,16 +1146,30 @@ section{
         background-position: center !important;
     }
 }
-/* Adjust layout for smaller screens */
 @media screen and (max-width: 768px) {
     .radial-bars {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Center items horizontally */
+        gap: 50px; /* Adjust gap between items */
     }
 
-    .radial-bars .radial-bar {
-        margin: 10px 0; /* Adjust spacing as needed */
+    .radial-bar {
+        display: flex;
+        flex-direction: column; /* Stack name and radial bar vertically */
+        align-items: center; /* Center items horizontally */
+        width: 100%;
+        max-width: 150px; /* Adjust based on desired size */
+        margin-top: 30px;
+    }
+
+    .radial-bar .percentage, .radial-bar .text {
+        margin-bottom: 0px;
+        margin-top: 40px; /* Adjust space between text and radial bar */
+    }
+
+    .radial-bar svg {
+        width: 200px; /* Adjust based on desired size */
+        height: 120px; /* Adjust based on desired size */
+        margin-top: 40px; /* Push radial bar down */
     }
 }
-
-
