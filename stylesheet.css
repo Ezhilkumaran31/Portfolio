@@ -1146,9 +1146,16 @@ section{
         background-position: center !important;
     }
 }
+/* Adjust layout for smaller screens */
 @media screen and (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: 1fr; /* Stacks items in a single column */
+    .radial-bars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .radial-bars .radial-bar {
+        margin: 10px 0; /* Adjust spacing as needed */
     }
 }
+
 
