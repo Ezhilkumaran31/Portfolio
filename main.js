@@ -1,24 +1,34 @@
-// Initialize Typed.js for text animation
-var Typed = new Typed(".text", {
-    strings: ["Student", "Frontend Developer", "Fresher"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
-
-// Function to refresh content of a section
-function refreshSection(section) {
-    // Example: Simply re-rendering the section's inner HTML
-    const originalContent = section.innerHTML;
-    section.innerHTML = '';
-    section.innerHTML = originalContent;
-}
-
-// Initialize IntersectionObserver
+// Initialize Typed.js
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('section');
-    
+    try {
+        var typed = new Typed(".text", {
+            strings: ["Student", "Frontend Developer", "Fresher"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    } catch (error) {
+        console.error("Typed.js initialization failed:", error);
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Target specific sections by class or ID
+    const sectionsToRefresh = document.querySelectorAll('.services, .skill');
+
+    function refreshSection(section) {
+        try {
+            // Store original content
+            const originalContent = section.innerHTML;
+
+            // Clear and reinsert content
+            section.innerHTML = '';
+            section.innerHTML = originalContent;
+        } catch (error) {
+            console.error("Error refreshing section:", error);
+        }
+    }
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -27,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, { threshold: 0.5 });
 
-    sections.forEach(section => {
+    sectionsToRefresh.forEach(section => {
         observer.observe(section);
     });
 });
 
-// Handle hamburger menu toggle
+// Toggle navbar visibility
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');

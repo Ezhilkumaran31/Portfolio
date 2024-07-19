@@ -1179,6 +1179,7 @@ section{
     display: flex; /* Horizontal layout */
 }
 
+
 .menu-toggle {
     display: none; /* Hide hamburger icon on larger screens */
 }
