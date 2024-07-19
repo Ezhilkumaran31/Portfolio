@@ -1146,5 +1146,9 @@ section{
         background-position: center !important;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Stacks items in a single column */
+    }
+}
 
