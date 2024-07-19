@@ -1193,7 +1193,7 @@ section{
         right: -250px; /* Start off-screen */
         width: 250px; /* Width of the sliding navbar */
         height: 100vh; /* Full viewport height */
-        background-color: #ffffff; /* Light white color */
+        background-color: #747588; /* Light white color */
         transition: right 0.3s ease; /* Slide-in transition */
         padding: 20px; /* Padding inside the navbar */
         z-index: 1000; /* Ensure navbar is on top */
@@ -1201,7 +1201,7 @@ section{
 
     /* Style for each link in the navbar on mobile */
     .navbar a {
-        color: #333333; /* Darker color for text */
+        color: #ffffff; /* Darker color for text */
         text-decoration: none; /* Remove underline from links */
         padding: 15px; /* Space between links */
         font-size: 18px; /* Font size */
@@ -1221,7 +1221,7 @@ section{
         display: block;
         width: 25px;
         height: 3px;
-        background-color: #333333; /* Color of the hamburger lines */
+        background-color: #ffffff; /* Color of the hamburger lines */
         margin: 5px 0;
     }
 
