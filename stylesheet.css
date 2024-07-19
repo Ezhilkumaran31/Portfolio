@@ -1189,7 +1189,7 @@ section{
     .navbar {
         display: flex; /* Show navbar on smaller screens */
         flex-direction: column; /* Stack items vertically */
-        position: fixed; /* Fixed position for the sliding effect */
+        position: absolute; /* Fixed position for the sliding effect */
         top: 0;
         right: -250px; /* Start off-screen */
         width: 250px; /* Width of the sliding navbar */
