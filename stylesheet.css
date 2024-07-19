@@ -1134,16 +1134,16 @@ section{
 /* Remove background image for mobile devices and set a solid color */
 @media screen and (max-width: 1080px) {
     .home {
-        background: #081b29;
+        background: #081b29 !important;
     }
 }
 
 /* Keep the background image for larger screens */
 @media screen and (min-width: 1081px) {
     .home {
-        background: url(images/background.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
+        background: url(images/background.jpg) no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
     }
 }
 
