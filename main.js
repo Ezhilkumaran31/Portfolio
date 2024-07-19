@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     // Target specific sections by class or ID
-    const sectionsToRefresh = document.querySelectorAll('.services, .skill');
+    const sectionsToRefresh = document.querySelectorAll('.services, .skill'); 
 
     function refreshSection(section) {
         try {
