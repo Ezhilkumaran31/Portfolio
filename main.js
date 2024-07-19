@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
