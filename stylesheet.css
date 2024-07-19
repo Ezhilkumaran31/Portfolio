@@ -1131,13 +1131,15 @@ section{
         font-size: 12px;
     }
 }
-@media screen and (max-width: 768px) {
+/* Remove background image for mobile devices and set a solid color */
+@media screen and (max-width: 1080px) {
     .home {
         background: #081b29;
     }
 }
 
-@media screen and (min-width: 769px) {
+/* Keep the background image for larger screens */
+@media screen and (min-width: 1081px) {
     .home {
         background: url(images/background.jpg) no-repeat;
         background-size: cover;
